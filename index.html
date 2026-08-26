@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HomeDecor | Interior & Home Furnishing</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <!-- LOGO -->
+            <div class="logo">
+
+                <!-- Change this image -->
+                <img src="img/logo.png" alt="Logo">
+
+                <!-- <div class="logo-text">
+                    <h2>Home<span>Decor</span></h2>
+                    <small>Interior & Furnishing</small>
+                </div> -->
+
+            </div>
+
+
+            <!-- MENU -->
+
+            <div class="nav-menu">
+
+                <a href="#home">Home</a>
+
+                <a href="#products">Products</a>
+
+                <a href="#about">About</a>
+
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <!-- WHATSAPP -->
+
+            <a class="nav-whatsapp"
+                href="https://wa.me/919405403455"
+                target="_blank">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                <span>WhatsApp</span>
+
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="hero-small">
+                BEAUTIFUL INTERIORS • BEAUTIFUL LIVING
+            </p>
+
+            <h1>
+                Make Your Home
+                <br>
+                <span>Beautiful & Elegant</span>
+            </h1>
+
+            <p>
+                Premium curtains, bedsheets, cushions,
+                blinds and home furnishing products
+                for your dream home.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#products" class="primary-btn">
+                    Explore Products
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="https://wa.me/919405403455"
+                    target="_blank"
+                    class="whatsapp-btn">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Contact Us
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CATEGORY SECTION
+    ========================== -->
+
+    <section class="categories">
+
+        <div class="section-heading">
+
+            <p>OUR COLLECTION</p>
+
+            <h2>
+                Shop By <span>Category</span>
+            </h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+
+        <div class="category-container">
+
+
+            <a href="#products" class="category-card">
+
+                <div class="category-icon">
+                    <i class="fa-solid fa-table-cells-large"></i>
+                </div>
+
+                <h3>All Products</h3>
+
+                <p>View Collection</p>
+
+            </a>
+
+
+            <a href="#products" class="category-card">
+
+                <div class="category-icon">
+                    <i class="fa-solid fa-window-maximize"></i>
+                </div>
+
+                <h3>Curtains</h3>
+
+                <p>Elegant Curtains</p>
+
+            </a>
+
+
+            <a href="#products" class="category-card">
+
+                <div class="category-icon">
+                    <i class="fa-solid fa-bed"></i>
+                </div>
+
+                <h3>Bedsheets</h3>
+
+                <p>Premium Bedsheets</p>
+
+            </a>
+
+
+            <a href="#products" class="category-card">
+
+                <div class="category-icon">
+                    <i class="fa-solid fa-couch"></i>
+                </div>
+
+                <h3>Cushions</h3>
+
+                <p>Beautiful Cushions</p>
+
+            </a>
+
+
+            <a href="#products" class="category-card">
+
+                <div class="category-icon">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+
+                <h3>Blinds</h3>
+
+                <p>Modern Blinds</p>
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PRODUCTS
+    ========================== -->
+
+    <section class="products-section" id="products">
+
+        <div class="section-heading">
+
+            <p>OUR PRODUCTS</p>
+
+            <h2>
+                Explore Our <span>Collection</span>
+            </h2>
+
+            <div class="heading-line"></div>
+
+            <p class="section-description">
+                Discover premium home furnishing products
+                designed to make your home beautiful,
+                comfortable and stylish.
+            </p>
+
+        </div>
+
+
+        <!-- PRODUCT FILTER -->
+
+        <div class="product-filter">
+
+            <button class="filter-btn active" data-category="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-category="curtain">
+                Curtains
+            </button>
+
+            <button class="filter-btn" data-category="bedsheet">
+                Bedsheets
+            </button>
+
+            <button class="filter-btn" data-category="cushion">
+                Cushions
+            </button>
+
+            <button class="filter-btn" data-category="blind">
+                Blinds
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCT GRID -->
+
+        <div class="product-container" id="productContainer">
+
+            <!-- Products will load from script.js -->
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section class="about-section" id="about">
+
+        <div class="about-image">
+
+            <!-- Change image -->
+            <img src="img/about.jpg" alt="Interior">
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p class="about-small">
+                ABOUT OUR STORE
+            </p>
+
+            <h2>
+                We Make Your
+                <span>Dream Home</span>
+                Beautiful
+            </h2>
+
+            <p>
+                We provide quality interior and home furnishing
+                products designed to add beauty, comfort and
+                elegance to your home.
+            </p>
+
+            <p>
+                From premium curtains and bedsheets to cushions,
+                blinds and other furnishing products, we bring
+                carefully selected designs for modern homes.
+            </p>
+
+
+            <div class="about-features">
+
+                <div>
+                    <i class="fa-solid fa-star"></i>
+
+                    <div>
+                        <h4>Quality Products</h4>
+                        <p>Premium quality materials</p>
+                    </div>
+                </div>
+
+
+                <div>
+                    <i class="fa-solid fa-heart"></i>
+
+                    <div>
+                        <h4>Customer Satisfaction</h4>
+                        <p>We care about our customers</p>
+                    </div>
+                </div>
+
+
+                <div>
+                    <i class="fa-solid fa-house"></i>
+
+                    <div>
+                        <h4>Beautiful Designs</h4>
+                        <p>Modern & elegant designs</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <a href="https://wa.me/919405403455"
+                target="_blank"
+                class="about-btn">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                Talk With Us
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         WHY CHOOSE US
+    ========================== -->
+
+    <section class="why-section">
+
+        <div class="section-heading">
+
+            <p>WHY CHOOSE US</p>
+
+            <h2>
+                Designed For Your
+                <span>Beautiful Home</span>
+            </h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+
+        <div class="why-container">
+
+
+            <div class="why-card">
+
+                <i class="fa-solid fa-gem"></i>
+
+                <h3>Premium Quality</h3>
+
+                <p>
+                    We provide quality furnishing products
+                    for your home.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <i class="fa-solid fa-palette"></i>
+
+                <h3>Modern Designs</h3>
+
+                <p>
+                    Stylish and elegant designs for
+                    modern interiors.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                <h3>Best Prices</h3>
+
+                <p>
+                    Quality products at reasonable
+                    and competitive prices.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                <h3>Easy Ordering</h3>
+
+                <p>
+                    Order your favourite product
+                    directly through WhatsApp.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         WHATSAPP CTA
+    ========================== -->
+
+    <section class="whatsapp-section">
+
+        <div>
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            <h2>
+                Like Our Products?
+            </h2>
+
+            <p>
+                Contact us on WhatsApp and
+                get more details about our products.
+            </p>
+
+        </div>
+
+
+        <a href="https://wa.me/919405403455"
+            target="_blank">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            Chat On WhatsApp
+
+        </a>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer id="contact">
+
+        <div class="footer-container">
+
+
+            <!-- ABOUT -->
+
+            <div class="footer-column footer-about">
+
+                <div class="footer-logo">
+
+                    
+
+                    <div>
+                        <h2><span>Powered By P. P. Traders</span></h2>
+
+                        <small>
+                            Interior & Furnishing
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <p>
+                    Premium curtains, bedsheets,
+                    cushions, blinds and home
+                    furnishing products for your
+                    beautiful home.
+                </p>
+
+
+                <div class="social-icons">
+
+                    <a href="https://www.instagram.com/loomghar_/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://wa.me/919405403455"
+                        target="_blank">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </a>
+
+                    <a href="https://www.facebook.com/profile.php?id=61592998460375">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#products">
+                    Products
+                </a>
+
+                <a href="#about">
+                    About Us
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </div>
+
+
+
+            <!-- PRODUCTS -->
+
+            <div class="footer-column">
+
+                <h3>Products</h3>
+
+                <a href="#products">
+                    Curtains
+                </a>
+
+                <a href="#products">
+                    Bedsheets
+                </a>
+
+                <a href="#products">
+                    Cushions
+                </a>
+
+                <a href="#products">
+                    Blinds
+                </a>
+
+            </div>
+
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-column">
+
+                <h3>Contact Us</h3>
+
+
+                <p class="contact-item">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                   C-35 Ground Floor, K K Market (Maha Market), Dhankawadi, Dhankawadi, Pune, Maharashtra 411043
+                   Map of P P Traders - Handloom House & Furnishings
+
+                </p>
+
+
+                <p class="contact-item">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    +919405403455
+
+                </p>
+
+
+                <p class="contact-item">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    WhatsApp Us
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 HomeDecor. All Rights Reserved.
+            </p>
+
+            <p>
+                Powered By P. P. Traders
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- FLOATING WHATSAPP -->
+
+    <a href="https://wa.me/919405403455"
+        class="floating-whatsapp"
+        target="_blank">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js">
+		const WHATSAPP_NUMBER = "919405403455";
+	</script>
+
+
+
+<!-- =========================================
+     PRODUCT DETAILS MODAL
+========================================= -->
+
+<div id="productModal" class="product-modal">
+
+
+    <div class="modal-content">
+
+
+        <!-- CLOSE BUTTON -->
+
+        <button
+            class="close-modal"
+            onclick="closeProduct()"
+        >
+            &times;
+        </button>
+
+
+        <!-- PRODUCT IMAGE -->
+
+        <div class="modal-image">
+
+            <span
+                id="modalBadge"
+                class="modal-badge"
+            >
+            </span>
+
+
+            <img
+                id="modalProductImage"
+                src=""
+                alt=""
+            >
+
+        </div>
+
+
+        <!-- PRODUCT INFORMATION -->
+
+        <div class="modal-info">
+
+
+            <p
+                id="modalCategory"
+                class="modal-category"
+            >
+            </p>
+
+
+            <h2 id="modalProductName">
+            </h2>
+
+
+            <p
+                id="modalDescription"
+                class="modal-description"
+            >
+            </p>
+
+
+            <div class="modal-price-box">
+
+                <span
+                    id="modalPrice"
+                    class="modal-price"
+                >
+                </span>
+
+
+                <span
+                    id="modalOldPrice"
+                    class="modal-old-price"
+                >
+                </span>
+
+            </div>
+
+
+            <!-- BUY NOW -->
+
+            <button
+                id="modalBuyButton"
+                class="modal-buy-btn"
+            >
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                Buy Now on WhatsApp
+
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+</body>
+
+</html>

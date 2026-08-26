@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<section class="filter-gallery">
+	<div class="portfolio-menu">
+			<ul>
+				<li class="active" data-filter="*"> All</li>
+				<li data-filter=".">Political</li>
+				<li data-filter=".seo">Pre_Wedding</li>
+				<li data-filter=".web",href="Wedding.html">Wedding</li>
+				<li data-filter=".">Festival</li>
+				<li data-filter=".">Beby</li>
+				<li data-filter=".">Model</li>
+				<li data-filter=".">Maternity</li>
+			</ul>
+		</div>
+		<div class="m-images"  data-aos="zoom-down" data-aos-offset="100" data-aos-delay="100">
+		<div class="portfolio-item"id="Wedding">
+			<div class="item web"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="100"id="Wedding">
+				<img src="img/dev 1.jpg" width="100" height="100">
+			</div>
+
+			<div class="item seo"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="200">
+				<img src="img/p2.jpg" width="100" height="100">
+			</div>
+			<div class="item web"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="300"id="Wedding">
+				<img src="img/dev 2.jpg" width="100" height="100">
+			</div>
+			<div class="item web" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100"id="Wedding">
+				<img src="img/dev 3.jpg" width="100" height="100">
+			</div>
+		
+		<div class="item web" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100"id="Wedding">
+                
+					<img src="img/dev 4.jpg" width="100" height="100" id="Wedding">
+		</div>
+		<div class="item web" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100"id="Wedding">
+			<img src="img/dev 5.jpg" width="100" height="100">
+		</div>
+		<div class="item web" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100"id="Wedding">
+			<img src="img/dev 6.jpg" width="100" height="100">
+		</div>
+		<div class="item web" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100"id="Wedding">
+			<img src="img/dev 7.jpg" width="100" height="100">
+		</div>
+		<div class="item web" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100"id="Wedding">
+			<img src="img/dev 8.jpg" width="100" height="100">
+		</div>
+		<div class="item web" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100"id="Wedding">
+			<img src="img/dev 9.jpg" width="100" height="100">
+		</div>
+		<div class="item web" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100"id="Wedding">
+			<img src="img/dev 10.jpg" width="100" height="100">
+		</div>
+
+			<div class="item seo" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="200">
+				<img src="img/p5.jpg" width="100" height="100">
+			</div>
+			<div class="item seo" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="300">
+				<img src="img/p6.jpg" width="100" height="100">
+			</div>
+			<div class="item graphics" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="100">
+				<img src="img/p7.jpg" width="100" height="100">
+			</div>
+			<div class="item graphics" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="200">
+				<img src="img/p8.jpg" width="100" height="100">
+			</div>
+			<div class="item graphics" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="300">
+				<img src="img/p9.jpg" width="100" height="100">
+			</div>
+		</div>
+	   </div>
+	</div>
+	</section>
+               
+            
+    
+</body>
+</html>
