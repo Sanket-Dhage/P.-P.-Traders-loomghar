@@ -659,3 +659,22 @@ filterButtons.forEach(button => {
 ===================================================== */
 
 displayProducts(products);
+
+
+
+/* =========================================
+   MOBILE HAMBURGER MENU
+========================================= */
+
+const hamburger =
+    document.getElementById("hamburger");
+
+const mobileMenu =
+    document.getElementById("menu");
+
+
+hamburger.addEventListener("click", function() {
+
+    mobileMenu.classList.toggle("active");
+
+});

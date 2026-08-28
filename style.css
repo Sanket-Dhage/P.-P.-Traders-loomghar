@@ -71,11 +71,12 @@ button {
 }
 
 .logo img {
-    width: 190px;
-    height: 55px;
+    width: 260px;
+    height: auto;
     object-fit: contain;
-    border-radius: 50%;
-}
+    border-radius: 0;
+    display: block;
+}   
 
 .logo-text h2 {
     font-family: 'Playfair Display', serif;
@@ -1813,6 +1814,236 @@ footer {
 
         font-size: 28px;
 
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE NAVBAR
+========================================= */
+
+nav {
+    width: 100%;
+    height: 90px;
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 55px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 999;
+
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 210px;
+    height: auto;
+    display: block;
+}
+
+
+/* =========================================
+   DESKTOP MENU
+========================================= */
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    padding: 12px 18px;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #b88a45;
+}
+
+
+/* =========================================
+   WHATSAPP BUTTON
+========================================= */
+
+.nav-whatsapp a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    background: #25D366;
+    color: white;
+
+    padding: 8px 16px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.nav-whatsapp a:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   HAMBURGER
+========================================= */
+
+.hamburger {
+    display: none;
+
+    width: 45px;
+    height: 45px;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        height: 75px;
+
+        padding: 0 18px;
+
+        position: fixed;
+    }
+
+
+    /* LOGO मोठा आणि clear */
+
+    .logo img {
+        width: 135px;
+        max-width: 45vw;
+    }
+
+
+    /* Desktop menu hide */
+
+    .menu {
+
+        position: absolute;
+
+        top: 75px;
+
+        left: 0;
+
+        width: 100%;
+
+        background: white;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 0;
+
+        padding: 10px 0 20px;
+
+        box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+
+        display: none;
+    }
+
+
+    /* Menu open झाल्यावर */
+
+    .menu.active {
+        display: flex;
+    }
+
+
+    .menu a {
+
+        width: 100%;
+
+        padding: 16px 25px;
+
+        font-size: 17px;
+
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+
+    /* WhatsApp button mobile menu मध्ये ठेवण्यासाठी */
+
+    .nav-whatsapp {
+
+        display: none;
+    }
+
+
+    /* Hamburger show */
+
+    .hamburger {
+
+        display: flex;
+    }
+
+
+    /* Hero Section */
+
+    header {
+
+        height: 85vh;
+
+        background-attachment: scroll;
+    }
+
+
+    .h-text {
+
+        width: 90%;
+
+        max-width: 100%;
+    }
+
+
+    .h-text h1 {
+
+        font-size: 2.4em;
+
+        line-height: 1.25;
     }
 
 }
