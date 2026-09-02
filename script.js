@@ -28,7 +28,7 @@ const products = [
     {
         id: 1,
 
-        name: "Floral Premium Bedsheet",
+        name: "Palash King Size Bedsheet",
 
         category: "bedsheet",
 
@@ -37,11 +37,11 @@ const products = [
         image: "img/floral-bedsheet.png",
 
         description:
-            "Premium floral printed bedsheet for a beautiful and comfortable bedroom.",
+            "1 BEDSHEET : 275cms x 270cms\n2 PILLOW COVERS : 43CMS x 69cms",
 
-        price: "₹1,499",
+        price: "₹1,900",
 
-        oldPrice: "₹1,999",
+        oldPrice: "₹2,299",
 
         badge: "New"
     },
@@ -60,14 +60,14 @@ const products = [
 
         categoryName: "Curtains",
 
-        image: "img/curtain2.jpg",
+        image: "img/curtain1.png",
 
         description:
             "Beautiful designer curtain with premium fabric and modern look.",
 
-        price: "₹1,899",
+        price: "Customisation Available",
 
-        oldPrice: "₹2,399",
+        oldPrice: "",
 
         badge: "NEW"
     },
@@ -86,14 +86,14 @@ const products = [
 
         categoryName: "Curtains",
 
-        image: "img/curtain3.jpg",
+        image: "img/curtain2.png",
 
         description:
             "Elegant curtain set suitable for living room and bedroom interiors.",
 
-        price: "₹2,199",
+        price: "Customisation Available",
 
-        oldPrice: "₹2,799",
+        oldPrice: "",
 
         badge: "POPULAR"
     },
@@ -104,26 +104,17 @@ const products = [
     ================================================= */
 
     {
-        id: 4,
+    id: 1,
+    name: "Floral Premium Bedsheet",
+    category: "bedsheet",
+    image: "img/bedshit2.png",
 
-        name: "Premium Cotton Bedsheet",
+    description: "1 BEDSHEET : 275cms x 270cms\n2 PILLOW COVERS : 43CMS x 69cms",
 
-        category: "bedsheet",
-
-        categoryName: "Bedsheets",
-
-        image: "img/bedsheet1.jpg",
-
-        description:
-            "Soft and comfortable premium cotton bedsheet with beautiful design.",
-
-        price: "₹999",
-
-        oldPrice: "₹1,299",
-
-        badge: "BEST SELLER"
-    },
-
+    price: "₹1,499",
+    oldPrice: "₹1,999",
+    badge: "NEW"
+},
 
     /* =================================================
        PRODUCT 5
@@ -138,7 +129,7 @@ const products = [
 
         categoryName: "Bedsheets",
 
-        image: "img/bedsheet2.jpg",
+        image: "img/bedseet.png",
 
         description:
             "Stylish designer bedsheet perfect for modern bedrooms.",
@@ -158,20 +149,19 @@ const products = [
     {
         id: 6,
 
-        name: "Floral Bedsheet",
+        name: "Kalakriti king size Bedsheet",
 
         category: "bedsheet",
 
         categoryName: "Bedsheets",
 
-        image: "img/bedsheet3.jpg",
+        image: "img/bedseet3.png",
 
         description:
-            "Beautiful floral printed bedsheet with soft and comfortable fabric.",
+             "1 BEDSHEET : 275cms x 270cms\n2 PILLOW COVERS : 43CMS x 69cms",
+        price: "₹1,299",
 
-        price: "₹1,099",
-
-        oldPrice: "₹1,399",
+        oldPrice: "₹1,599",
 
         badge: "POPULAR"
     },
@@ -207,27 +197,26 @@ const products = [
        PRODUCT 8
     ================================================= */
 
-    {
-        id: 8,
+   {
+        id: 3,
 
-        name: "Designer Cushion Set",
+        name: "Elegant Curtain Set",
 
-        category: "cushion",
+        category: "curtain",
 
-        categoryName: "Cushions",
+        categoryName: "Curtains",
 
-        image: "img/cushion2.jpg",
+        image: "img/curtain3.png",
 
         description:
-            "Beautiful cushion set to enhance your home interior.",
+            "Elegant curtain set suitable for living room and bedroom interiors.",
 
-        price: "₹799",
+        price: "Customisation Available",
 
-        oldPrice: "₹999",
+        oldPrice: "",
 
         badge: "POPULAR"
     },
-
 
     /* =================================================
        PRODUCT 9
@@ -268,7 +257,7 @@ const products = [
 
         categoryName: "Blinds",
 
-        image: "img/blind1.jpg",
+        image: "img/blinds1.png",
 
         description:
             "Modern window blind suitable for home and office interiors.",
@@ -294,7 +283,7 @@ const products = [
 
         categoryName: "Blinds",
 
-        image: "img/blind2.jpg",
+        image: "img/blinds3.png",
 
         description:
             "Elegant roller blind with modern design and premium finish.",
@@ -320,7 +309,7 @@ const products = [
 
         categoryName: "Blinds",
 
-        image: "img/blind3.jpg",
+        image: "img/blinds2.png",
 
         description:
             "Stylish zebra blind designed for modern windows.",
@@ -422,7 +411,7 @@ function displayProducts(productList) {
 
                     <button
                         class="open-btn"
-                        onclick="openProduct(${product.id})"
+                        onclick="openProductPage(${product.id})"
                     >
                         Open
                     </button>
@@ -436,15 +425,11 @@ function displayProducts(productList) {
 
         /* पूर्ण card वर click केल्यावर पण product open होईल */
 
-        card.addEventListener("click", function(event) {
+        card.addEventListener("click", function() {
 
-            if (!event.target.closest(".open-btn")) {
+    openProductPage(product.id);
 
-                openProduct(product.id);
-
-            }
-
-        });
+});
 
 
         productContainer.appendChild(card);
@@ -658,8 +643,9 @@ filterButtons.forEach(button => {
    INITIAL LOAD
 ===================================================== */
 
-displayProducts(products);
-
+if (productContainer) {
+    displayProducts(products);
+}
 
 
 /* =========================================
@@ -678,3 +664,11 @@ hamburger.addEventListener("click", function() {
     mobileMenu.classList.toggle("active");
 
 });
+
+
+function openProductPage(productId) {
+
+    window.location.href =
+        "product.html?id=" + productId;
+
+}
