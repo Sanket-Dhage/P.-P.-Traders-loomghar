@@ -104,7 +104,7 @@ const products = [
     ================================================= */
 
     {
-    id: 1,
+    id: 4,
     name: "Floral Premium Bedsheet",
     category: "bedsheet",
     image: "img/bedshit2.png",
@@ -198,7 +198,7 @@ const products = [
     ================================================= */
 
    {
-        id: 3,
+        id: 8,
 
         name: "Elegant Curtain Set",
 
@@ -448,9 +448,12 @@ const products = [
         badge: "BEST SELLER"
     }
 ,
+/* =================================================
+       PRODUCT 18
+    ================================================= */
 
 {
-        id: 17,
+        id: 18,
 
         name: "Premium Matteresses",
 
@@ -487,6 +490,10 @@ const productContainer =
    DISPLAY PRODUCTS
 ===================================================== */
 
+/* =====================================================
+   DISPLAY PRODUCTS
+===================================================== */
+
 function displayProducts(productList) {
 
     productContainer.innerHTML = "";
@@ -509,6 +516,24 @@ function displayProducts(productList) {
         const card = document.createElement("div");
 
         card.classList.add("product-card");
+
+
+        /* =================================================
+           MOBILE + DESKTOP CARD CLICK
+        ================================================= */
+
+        card.addEventListener("click", function(event) {
+
+            /* Open button वर click असल्यास
+               card click पुन्हा चालू होऊ नये */
+
+            if (event.target.closest(".open-btn")) {
+                return;
+            }
+
+            openProductPage(product.id);
+
+        });
 
 
         card.innerHTML = `
@@ -547,6 +572,7 @@ function displayProducts(productList) {
 
                 <div class="product-bottom">
 
+
                     <div class="price">
 
                         ${product.price}
@@ -559,11 +585,13 @@ function displayProducts(productList) {
 
 
                     <button
+                        type="button"
                         class="open-btn"
                         onclick="openProductPage(${product.id})"
                     >
                         Open
                     </button>
+
 
                 </div>
 
@@ -572,21 +600,11 @@ function displayProducts(productList) {
         `;
 
 
-        /* पूर्ण card वर click केल्यावर पण product open होईल */
-
-        card.addEventListener("click", function() {
-
-    openProductPage(product.id);
-
-});
-
-
         productContainer.appendChild(card);
 
     });
 
 }
-
 function openProduct(productId) {
 
     const product =
