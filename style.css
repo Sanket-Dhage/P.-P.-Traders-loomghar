@@ -3079,7 +3079,7 @@ nav {
     */
     font-family: "Permanent Marker", "Brush Script MT", cursive !important;
 
-    font-size: 25px;
+    font-size: 14px;
     font-weight: normal;
     letter-spacing: 1px;
 
@@ -3121,4 +3121,34 @@ nav {
 
 .product-description {
     white-space: pre-line;
+}
+
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-logo a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footer-logo img {
+    display: block;
+    width: 240px;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+
+@media (max-width: 768px) {
+
+    .footer-logo img {
+        width: 190px;
+    }
+
 }

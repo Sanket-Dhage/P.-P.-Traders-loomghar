@@ -39,9 +39,9 @@ const products = [
         description:
             "1 BEDSHEET : 275cms x 270cms\n2 PILLOW COVERS : 43CMS x 69cms",
 
-        price: "₹1,900",
+        price: "Available",
 
-        oldPrice: "₹2,299",
+        oldPrice: "",
 
         badge: "New"
     },
@@ -111,8 +111,8 @@ const products = [
 
     description: "1 BEDSHEET : 275cms x 270cms\n2 PILLOW COVERS : 43CMS x 69cms",
 
-    price: "₹1,499",
-    oldPrice: "₹1,999",
+    price: "Available",
+    oldPrice: "",
     badge: "NEW"
 },
 
@@ -134,9 +134,9 @@ const products = [
         description:
             "Stylish designer bedsheet perfect for modern bedrooms.",
 
-        price: "₹1,299",
+        price: "Available",
 
-        oldPrice: "₹1,599",
+        oldPrice:"",
 
         badge: "NEW"
     },
@@ -159,9 +159,9 @@ const products = [
 
         description:
              "1 BEDSHEET : 275cms x 270cms\n2 PILLOW COVERS : 43CMS x 69cms",
-        price: "₹1,299",
+        price: "Available",
 
-        oldPrice: "₹1,599",
+        oldPrice: "",
 
         badge: "POPULAR"
     },
@@ -180,14 +180,14 @@ const products = [
 
         categoryName: "Cushions",
 
-        image: "img/cushion1.jpg",
+        image: "img/cushion1.jpeg",
 
         description:
             "Premium decorative cushion designed for sofa and living room.",
 
-        price: "₹399",
+        price: "Available",
 
-        oldPrice: "₹499",
+        oldPrice: "",
 
         badge: "NEW"
     },
@@ -231,14 +231,14 @@ const products = [
 
         categoryName: "Cushions",
 
-        image: "img/cushion3.jpg",
+        image: "img/cushion3.jpeg",
 
         description:
             "Luxury velvet cushion with premium finish for elegant interiors.",
 
-        price: "₹499",
+        price: "Available",
 
-        oldPrice: "₹699",
+        oldPrice: "",
 
         badge: "PREMIUM"
     },
@@ -255,16 +255,16 @@ const products = [
 
         category: "blind",
 
-        categoryName: "Blinds",
+        categoryName: "Blind/Wallpaperr",
 
         image: "img/blinds1.png",
 
         description:
             "Modern window blind suitable for home and office interiors.",
 
-        price: "₹1,299",
+        price: "Available",
 
-        oldPrice: "₹1,699",
+        oldPrice: "",
 
         badge: "POPULAR"
     },
@@ -281,16 +281,16 @@ const products = [
 
         category: "blind",
 
-        categoryName: "Blinds",
+        categoryName: "Blind/Wallpaper",
 
         image: "img/blinds3.png",
 
         description:
             "Elegant roller blind with modern design and premium finish.",
 
-        price: "₹1,599",
+        price: "Available",
 
-        oldPrice: "₹1,999",
+        oldPrice: "",
 
         badge: "NEW"
     },
@@ -307,16 +307,165 @@ const products = [
 
         category: "blind",
 
-        categoryName: "Blinds",
+        categoryName: "Blind/Wallpaper",
 
         image: "img/blinds2.png",
 
         description:
             "Stylish zebra blind designed for modern windows.",
 
-        price: "₹1,899",
+        price: "Available",
 
-        oldPrice: "₹2,299",
+        oldPrice: "",
+
+        badge: "BEST SELLER"
+    },
+
+    /* =================================================
+       PRODUCT 13
+    ================================================= */
+
+    {
+        id: 13,
+
+        name: "Premium Doormats & Mats",
+
+        category: "doormat",
+
+        categoryName: "Doormats",
+
+        image: "img/doormats1.png",
+
+        description:
+            "Stylish Doormats designed for modern .",
+
+        price: " Available",
+
+        oldPrice: "",
+
+        badge: "BEST SELLER"
+    },
+
+    /* =================================================
+       PRODUCT 14
+    ================================================= */
+
+    {
+        id: 14,
+
+        name: "Premium Towels",
+
+        category: "towel",
+
+        categoryName: "Towels",
+
+        image: "img/towels1.jpeg",
+
+        description:
+            "Stylish Towels designed for modern .",
+
+        price: " Available",
+
+        oldPrice: "",
+
+        badge: "BEST SELLER"
+    },
+
+    /* =================================================
+       PRODUCT 15
+    ================================================= */
+
+    {
+        id: 15,
+
+        name: "Modern Towels",
+
+        category: "towel",
+
+        categoryName: "Towels",
+
+        image: "img/towels2.jpeg",
+
+        description:
+            "Stylish Towels designed for modern .",
+
+        price: " Available",
+
+        oldPrice: "",
+
+        badge: "BEST SELLER"
+    },
+
+    /* =================================================
+       PRODUCT 16
+    ================================================= */
+
+    {
+        id: 16,
+
+        name: "Premium Towels",
+
+        category: "towel",
+
+        categoryName: "Towels",
+
+        image: "img/towels3.jpeg",
+
+        description:
+            "Stylish Towels designed for modern .",
+
+        price: " Available",
+
+        oldPrice: "",
+
+        badge: "BEST SELLER"
+    }
+
+    ,
+    
+    /* =================================================
+       PRODUCT 17
+    ================================================= */
+
+    {
+        id: 17,
+
+        name: "Premium Blankets",
+
+        category: "blanket",
+
+        categoryName: "Blankets",
+
+        image: "img/blankets1.png",
+
+        description:
+            "Stylish Blankets designed for modern .",
+
+        price: " Available",
+
+        oldPrice: "",
+
+        badge: "BEST SELLER"
+    }
+,
+
+{
+        id: 17,
+
+        name: "Premium Matteresses",
+
+        category: "Matteresses",
+
+        categoryName: "Matteresses",
+
+        image: "img/Matteresses.png",
+
+        description:
+            "Stylish Matteresses designed for modern .",
+
+        price: " Available",
+
+        oldPrice: "",
 
         badge: "BEST SELLER"
     }
