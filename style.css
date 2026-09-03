@@ -3298,3 +3298,49 @@ nav {
     }
 
 }
+
+/* =========================================
+   MOBILE TOUCH FIX
+========================================= */
+
+@media (max-width: 768px) {
+
+    .product-filter {
+        position: relative;
+        z-index: 20;
+    }
+
+    .filter-btn {
+        position: relative;
+        z-index: 21;
+
+        pointer-events: auto;
+        touch-action: manipulation;
+
+        cursor: pointer;
+    }
+
+    .product-container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .product-card {
+        position: relative;
+        z-index: 2;
+
+        pointer-events: auto;
+        touch-action: manipulation;
+
+        cursor: pointer;
+    }
+
+    .open-btn {
+        position: relative;
+        z-index: 3;
+
+        pointer-events: auto;
+        touch-action: manipulation;
+    }
+
+}

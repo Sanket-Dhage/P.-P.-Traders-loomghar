@@ -510,34 +510,15 @@ function displayProducts(productList) {
         return;
     }
 
-
     productList.forEach(product => {
 
         const card = document.createElement("div");
 
         card.classList.add("product-card");
 
-
-        /* =================================================
-           MOBILE + DESKTOP CARD CLICK
-        ================================================= */
-
-        card.addEventListener("click", function(event) {
-
-            /* Open button वर click असल्यास
-               card click पुन्हा चालू होऊ नये */
-
-            if (event.target.closest(".open-btn")) {
-                return;
-            }
-
-            openProductPage(product.id);
-
-        });
-
+        card.setAttribute("data-product-id", product.id);
 
         card.innerHTML = `
-
             <div class="product-image">
 
                 <img
@@ -552,57 +533,56 @@ function displayProducts(productList) {
 
             </div>
 
-
             <div class="product-info">
 
                 <p class="product-category">
-                    ${product.categoryName}
+                    ${product.categoryName || ""}
                 </p>
-
 
                 <h3>
                     ${product.name}
                 </h3>
 
-
                 <p class="product-description">
                     ${product.description}
                 </p>
 
-
                 <div class="product-bottom">
 
-
                     <div class="price">
-
                         ${product.price}
 
                         <span class="old-price">
-                            ${product.oldPrice}
+                            ${product.oldPrice || ""}
                         </span>
-
                     </div>
-
 
                     <button
                         type="button"
                         class="open-btn"
-                        onclick="openProductPage(${product.id})"
                     >
                         Open
                     </button>
 
-
                 </div>
 
             </div>
-
         `;
 
+        /* PRODUCT CARD CLICK */
+
+        card.addEventListener("click", function () {
+
+            openProductPage(product.id);
+
+        });
 
         productContainer.appendChild(card);
 
     });
+
+
+
 
 }
 function openProduct(productId) {
@@ -762,49 +742,39 @@ Thank you.`;
 const filterButtons =
     document.querySelectorAll(".filter-btn");
 
-
 filterButtons.forEach(button => {
 
-    button.addEventListener("click", function () {
+    button.addEventListener("click", function (event) {
 
+        event.preventDefault();
+        event.stopPropagation();
 
         filterButtons.forEach(btn => {
-
             btn.classList.remove("active");
-
         });
-
 
         this.classList.add("active");
 
-
         const category =
             this.getAttribute("data-category");
-
 
         if (category === "all") {
 
             displayProducts(products);
 
             return;
-
         }
 
-
         const filteredProducts =
-            products.filter(
-                product =>
-                    product.category === category
+            products.filter(product =>
+                product.category === category
             );
-
 
         displayProducts(filteredProducts);
 
     });
 
 });
-
-
 
 /* =====================================================
    INITIAL LOAD
