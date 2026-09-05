@@ -123,13 +123,13 @@ const products = [
     {
         id: 5,
 
-        name: "Designer Bedsheet",
+        name: "Empress King Size Bedsheet",
 
         category: "bedsheet",
 
         categoryName: "Bedsheets",
 
-        image: "img/bedseet.png",
+        image: "img/bedsheets4.png",
 
         description:
             "Stylish designer bedsheet perfect for modern bedrooms.",
@@ -251,7 +251,7 @@ const products = [
     {
         id: 10,
 
-        name: "Modern Window Blind",
+        name: "Modern Window Blind And Wallpaper",
 
         category: "blind",
 
@@ -260,9 +260,9 @@ const products = [
         image: "img/blinds1.png",
 
         description:
-            "Modern window blind suitable for home and office interiors.",
+            " suitable for home and office interiors.",
 
-        price: "Available",
+        price: "Customisation Available",
 
         oldPrice: "",
 
@@ -277,7 +277,7 @@ const products = [
     {
         id: 11,
 
-        name: "Premium Roller Blind",
+        name: "Premium Blind And Wallpaper",
 
         category: "blind",
 
@@ -286,9 +286,9 @@ const products = [
         image: "img/blinds3.png",
 
         description:
-            "Elegant roller blind with modern design and premium finish.",
+            "Elegant Wallpaper & blind with modern design and premium finish.",
 
-        price: "Available",
+        price: "Customisation Available",
 
         oldPrice: "",
 
@@ -303,7 +303,7 @@ const products = [
     {
         id: 12,
 
-        name: "Zebra Window Blind",
+        name: " Window Blind And Wallpaper",
 
         category: "blind",
 
@@ -312,9 +312,9 @@ const products = [
         image: "img/blinds2.png",
 
         description:
-            "Stylish zebra blind designed for modern windows.",
+            "Stylish Wallpaper &blind designed for modern Home.",
 
-        price: "Available",
+        price: "Customisation Available",
 
         oldPrice: "",
 
@@ -436,7 +436,7 @@ const products = [
 
         categoryName: "Blankets",
 
-        image: "img/blankets1.png",
+        image: "img/blankets1.jpeg",
 
         description:
             "Stylish Blankets designed for modern .",
@@ -455,16 +455,16 @@ const products = [
 {
         id: 18,
 
-        name: "Premium Matteresses",
+        name: "Premium Sleepwells Matteresses",
 
         category: "Matteresses",
 
         categoryName: "Matteresses",
 
-        image: "img/Matteresses.png",
+        image: "img/matresses2.jpg",
 
         description:
-            "Stylish Matteresses designed for modern .",
+            "Stylish Matteresses designed for modern home .",
 
         price: " Available",
 
@@ -739,12 +739,14 @@ Thank you.`;
    CATEGORY FILTER
 ===================================================== */
 
+
+
 const filterButtons =
     document.querySelectorAll(".filter-btn");
 
 filterButtons.forEach(button => {
 
-    button.addEventListener("click", function (event) {
+    button.addEventListener("click", function(event) {
 
         event.preventDefault();
         event.stopPropagation();
@@ -775,6 +777,8 @@ filterButtons.forEach(button => {
     });
 
 });
+
+
 
 /* =====================================================
    INITIAL LOAD
