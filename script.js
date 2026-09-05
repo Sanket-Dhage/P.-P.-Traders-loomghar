@@ -37,7 +37,7 @@ const products = [
         image: "img/floral-bedsheet.png",
 
         description:
-            "1 BEDSHEET : 275cms x 270cms\n2 PILLOW COVERS : 43CMS x 69cms",
+            "1 BEDSHEET : 275cms x 270cms\n2, PILLOW COVERS : 43CMS x 69cms",
 
         price: "Available",
 
@@ -109,7 +109,7 @@ const products = [
     category: "bedsheet",
     image: "img/bedshit2.png",
 
-    description: "1 BEDSHEET : 275cms x 270cms\n2 PILLOW COVERS : 43CMS x 69cms",
+    description: "1 BEDSHEET : 275cms x 270cms\n2, PILLOW COVERS : 43CMS x 69cms",
 
     price: "Available",
     oldPrice: "",
@@ -158,7 +158,7 @@ const products = [
         image: "img/bedseet3.png",
 
         description:
-             "1 BEDSHEET : 275cms x 270cms\n2 PILLOW COVERS : 43CMS x 69cms",
+             "1 BEDSHEET : 275cms x 270cms\n2 ,PILLOW COVERS : 43CMS x 69cms",
         price: "Available",
 
         oldPrice: "",
