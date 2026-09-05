@@ -3071,7 +3071,7 @@ nav {
     /*
        Brush / Handwritten style
     */
-    font-family: "Permanent Marker", "Brush Script MT", cursive !important;
+   
 
     font-size: 14px;
     font-weight: normal;
@@ -3335,6 +3335,29 @@ nav {
 
         pointer-events: auto;
         touch-action: manipulation;
+    }
+
+}
+
+
+/* =========================================
+   PRODUCT DETAILS IMAGE - MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .product-details-image {
+        height: 220px !important;
+        min-height: 220px !important;
+        max-height: 220px !important;
+    }
+
+    .product-details-image img {
+        width: 100%;
+        height: 220px !important;
+        min-height: 220px !important;
+        max-height: 220px !important;
+        object-fit: cover;
     }
 
 }
