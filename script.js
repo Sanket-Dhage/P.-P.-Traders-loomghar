@@ -342,7 +342,7 @@ const products = [
         description:
             "Stylish Doormats designed for modern .",
 
-        price: " ₹50 TO ₹500",
+        price: " ₹50 - ₹500",
 
         oldPrice: "",
 
@@ -433,7 +433,7 @@ const products = [
     {
         id: 17,
 
-        name: "Premium Blankets",
+        name: "Premium SB Blankets",
 
         category: "blanket",
 
@@ -442,14 +442,16 @@ const products = [
         image: "img/blankets1.jpeg",
 
         description:
-            "Stylish Blankets designed for modern .",
+            "Stylish Blankets designed for singal bed .",
 
-        price: "SB-670 TO 1100\n,DB-1100 TO 1500 ",
+        price: "₹670 - ₹1100 ",
 
         oldPrice: "",
 
         badge: "BEST SELLER"
     }
+
+
 ,
 /* =================================================
        PRODUCT 18
@@ -551,7 +553,7 @@ const products = [
            // "The MEDEMOVE Cervical Pillow PU Foam is expertly designed to provide optimal neck and spinal support.",
                "9 FEET CURTAIN ",
         price: 
-        "₹600 To ₹850",
+        "₹600 - ₹850",
 
         oldPrice: "",
 
@@ -579,9 +581,9 @@ const products = [
            // "The MEDEMOVE Cervical Pillow PU Foam is expertly designed to provide optimal neck and spinal support.",
                "5 FEET CURTAIN ",
         price: 
-        "₹200 To ₹700  ",
+        "₹200 - ₹700  ",
 
-        oldPrice: "₹300 To ₹900",
+        oldPrice: "₹300 - ₹900",
 
         badge: "PREMIUM"
     },
@@ -606,9 +608,9 @@ const products = [
            // "The MEDEMOVE Cervical Pillow PU Foam is expertly designed to provide optimal neck and spinal support.",
            "7 FEET CURTAIN ",
         price: 
-        "₹250 To ₹900",
+        "₹250 - ₹900",
 
-        oldPrice: "₹300 To ₹1000",
+        oldPrice: "₹300 - ₹1000",
 
         badge: "PREMIUM"
     },
@@ -631,13 +633,34 @@ const products = [
         description:
             " 3*6\n5*6.5",
 
-        price: "₹1,200 To ₹1,800",
+        price: "₹1,200 - ₹1,800",
 
         oldPrice: "",
 
         badge: "BEST SELLER"
     },
 
+
+    {
+        id: 25,
+
+        name: "Premium DB Blankets",
+
+        category: "blanket",
+
+        categoryName: "Blankets",
+
+        image: "img/blankets1.jpeg",
+
+        description:
+            "Stylish Blankets designed for Duble Bed.",
+
+        price: "₹1100 - ₹1500 ",
+
+        oldPrice: "",
+
+        badge: "BEST SELLER"
+    }
 
 ];
 
