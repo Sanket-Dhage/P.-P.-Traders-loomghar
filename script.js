@@ -37,11 +37,12 @@ const products = [
         image: "img/floral-bedsheet.png",
 
         description:
-            "1 BEDSHEET : 275cms x 270cms\n2, PILLOW COVERS : 43CMS x 69cms",
+            "1 BEDSHEET : 275cms x 270cms\n2 PILLOW COVERS : 43CMS x 69cms",
 
-        price: "Available",
+        price: "₹1,800",
+        oldPrice: "₹2,200",
 
-        oldPrice: "",
+        
 
         badge: "New"
     },
@@ -63,8 +64,8 @@ const products = [
         image: "img/curtain1.png",
 
         description:
-            "Beautiful designer curtain with premium fabric and modern look.",
-
+           "Beautiful designer curtain with premium fabric and modern look.",
+//"5 FEET CURTAIN : 200 to 700\n7 FEET CURTAIN : 250 to 900\n9 FEET CURTAIN : 600 to 800\nDohar : 450 to 2100",
         price: "Customisation Available",
 
         oldPrice: "",
@@ -90,7 +91,7 @@ const products = [
 
         description:
             "Elegant curtain set suitable for living room and bedroom interiors.",
-
+//"5 FEET CURTAIN : 200 to 700\n7 FEET CURTAIN : 250 to 900\n9 FEET CURTAIN : 600 to 800\nDohar : 450 to 2100",
         price: "Customisation Available",
 
         oldPrice: "",
@@ -111,8 +112,8 @@ const products = [
 
     description: "1 BEDSHEET : 275cms x 270cms\n2, PILLOW COVERS : 43CMS x 69cms",
 
-    price: "Available",
-    oldPrice: "",
+    price:  "₹1,450",
+    oldPrice: "₹1,800",
     badge: "NEW"
 },
 
@@ -134,9 +135,9 @@ const products = [
         description:
             "Stylish designer bedsheet perfect for modern bedrooms.",
 
-        price: "Available",
+        price: "₹1,400",
 
-        oldPrice:"",
+        oldPrice:"₹1,800",
 
         badge: "NEW"
     },
@@ -159,9 +160,9 @@ const products = [
 
         description:
              "1 BEDSHEET : 275cms x 270cms\n2 ,PILLOW COVERS : 43CMS x 69cms",
-        price: "Available",
+        price: "₹1,200",
 
-        oldPrice: "",
+        oldPrice: "₹1,500",
 
         badge: "POPULAR"
     },
@@ -185,7 +186,8 @@ const products = [
         description:
             "Premium decorative cushion designed for sofa and living room.",
 
-        price: "Available",
+        price: 
+        "Available",
 
         oldPrice: "",
 
@@ -210,7 +212,7 @@ const products = [
 
         description:
             "Elegant curtain set suitable for living room and bedroom interiors.",
-
+               //"5 FEET CURTAIN : 200 to 700\n7 FEET CURTAIN : 250 to 900\n9 FEET CURTAIN : 600 to 800\nDohar : 450 to 2100",
         price: "Customisation Available",
 
         oldPrice: "",
@@ -236,7 +238,8 @@ const products = [
         description:
             "Luxury velvet cushion with premium finish for elegant interiors.",
 
-        price: "Available",
+        price: 
+        "Available",
 
         oldPrice: "",
 
@@ -339,7 +342,7 @@ const products = [
         description:
             "Stylish Doormats designed for modern .",
 
-        price: " Available",
+        price: " ₹50 TO ₹500",
 
         oldPrice: "",
 
@@ -362,11 +365,11 @@ const products = [
         image: "img/towels1.jpeg",
 
         description:
-            "Stylish Towels designed for modern .",
+            "pack - 1 pis\nsize - 5 x 150",
 
-        price: " Available",
+        price: "₹500",
 
-        oldPrice: "",
+        oldPrice: "₹800",
 
         badge: "BEST SELLER"
     },
@@ -387,11 +390,11 @@ const products = [
         image: "img/towels2.jpeg",
 
         description:
-            "Stylish Towels designed for modern .",
+            "pack - 2 pis\nsize - 0.40 x 0.60",
 
-        price: " Available",
+        price: "₹240",
 
-        oldPrice: "",
+        oldPrice: "₹370",
 
         badge: "BEST SELLER"
     },
@@ -412,11 +415,11 @@ const products = [
         image: "img/towels3.jpeg",
 
         description:
-            "Stylish Towels designed for modern .",
+            "pack - 3 pis\nsize - 0.30 x 0.30",
 
-        price: " Available",
+        price: "₹150",
 
-        oldPrice: "",
+        oldPrice: "₹300",
 
         badge: "BEST SELLER"
     }
@@ -441,7 +444,7 @@ const products = [
         description:
             "Stylish Blankets designed for modern .",
 
-        price: " Available",
+        price: "SB-670 TO 1100\n,DB-1100 TO 1500 ",
 
         oldPrice: "",
 
@@ -455,7 +458,7 @@ const products = [
 {
         id: 18,
 
-        name: "Premium Sleepwells Matteresses",
+        name: " Sleepwell Matteresses",
 
         category: "Matteresses",
 
@@ -471,11 +474,172 @@ const products = [
         oldPrice: "",
 
         badge: "BEST SELLER"
-    }
+    },
+
+/* =================================================
+       PRODUCT 19
+    ================================================= */
+
+
+
+{
+        id: 19,
+
+        name: "Memory Pillow",
+
+        category: "cushion",
+
+        categoryName: "Cushions",
+
+        image: "img/memory.webp",
+ 
+        description:
+            "Orthopedic Contour Memory Foam Pillow for Neck & Spine Support",
+
+        price: 
+        "₹900",
+
+        oldPrice: "",
+
+        badge: "PREMIUM"
+    },
+
+/* =================================================
+       PRODUCT 20
+    ================================================= */
+
+    {
+        id: 20,
+
+        name: "Cervical Pillow",
+
+        category: "cushion",
+
+        categoryName: "Cushions",
+
+        image: "img/pillow cervical.jpg",
+
+        description:
+            "The MEDEMOVE Cervical Pillow PU Foam is expertly designed to provide optimal neck and spinal support.",
+
+        price: 
+        "₹750",
+
+        oldPrice: "",
+
+        badge: "PREMIUM"
+    },
+
+
+/* =================================================
+       PRODUCT 21
+    ================================================= */
+
+    {
+        id: 21,
+
+        
+        name: "Premium Curtain",
+
+        category: "curtain",
+
+        categoryName: "curtains",
+
+        image: "img/Textured Geometric Curtains in a Cozy Interior.png",
+
+        description:
+           // "The MEDEMOVE Cervical Pillow PU Foam is expertly designed to provide optimal neck and spinal support.",
+               "9 FEET CURTAIN ",
+        price: 
+        "₹600 To ₹850",
+
+        oldPrice: "",
+
+        badge: "PREMIUM"
+    },
+
+
+
+    /* =================================================
+       PRODUCT 22
+    ================================================= */
+
+    {
+        id: 22,
+
+        name: "Designer Curtain",
+
+        category: "curtain",
+
+        categoryName: "Curtains",
+
+        image: "img/Elegant Damask Curtains with Fabric Detail.png",
+
+        description:
+           // "The MEDEMOVE Cervical Pillow PU Foam is expertly designed to provide optimal neck and spinal support.",
+               "5 FEET CURTAIN ",
+        price: 
+        "₹200 To ₹700  ",
+
+        oldPrice: "₹300 To ₹900",
+
+        badge: "PREMIUM"
+    },
+
+
+    /* =================================================
+       PRODUCT 23
+    ================================================= */
+
+    {
+        id: 23,
+
+        name: "premium curtain",
+
+        category: "curtain",
+
+        categoryName: "Curtains",
+
+        image: "img/Elegant Damask Curtain Living Room.png",
+
+        description:
+           // "The MEDEMOVE Cervical Pillow PU Foam is expertly designed to provide optimal neck and spinal support.",
+           "7 FEET CURTAIN ",
+        price: 
+        "₹250 To ₹900",
+
+        oldPrice: "₹300 To ₹1000",
+
+        badge: "PREMIUM"
+    },
+ /* =================================================
+       PRODUCT 24
+    ================================================= */
+
+
+    {
+        id: 24,
+
+        name: "Folding Mattress",
+
+        category: "Matteresses",
+
+        categoryName: "Matteresses",
+
+        image: "img/folding.jpeg",
+
+        description:
+            " 3*6\n5*6.5",
+
+        price: "₹1,200 To ₹1,800",
+
+        oldPrice: "",
+
+        badge: "BEST SELLER"
+    },
+
 
 ];
-
-
 
 /* =====================================================
    PRODUCT CONTAINER
