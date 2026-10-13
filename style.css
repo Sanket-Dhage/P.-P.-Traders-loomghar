@@ -3367,3 +3367,51 @@ nav {
     }
 
 }
+
+
+/* =========================================
+   FIXED PRODUCT FILTER + SCROLLABLE PRODUCTS
+   ========================================= */
+
+.products-section {
+    position: relative;
+}
+
+/* Filter buttons जागेवर राहतील */
+.product-filter {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+    padding: 12px 0;
+    margin-bottom: 15px;
+    isolation: isolate;
+}
+
+/* फक्त Products scroll होतील */
+.product-container {
+    position: relative;
+    z-index: 1;
+    max-height: 65vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+/* Mobile settings */
+@media screen and (max-width: 768px) {
+    .product-filter {
+        top: 0;
+        padding: 10px 0;
+    }
+
+    .product-container {
+        max-height: 65vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        touch-action: pan-y;
+    }
+}
